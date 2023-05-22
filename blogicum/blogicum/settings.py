@@ -141,12 +141,12 @@ EMAIL_FILE_PATH = BASE_DIR / 'sent_emails'
 CSRF_FAILURE_VIEW = 'pages.views.csrf_failure'
 
 #login
-#AUTH_USER_MODEL = 'auth.User'
+AUTH_USER_MODEL = 'auth.User'
 
-#AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend']
+AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend']
 
-###LOGIN_URL = '/accounts/login/'
+LOGIN_URL = '/accounts/login/'
 
-LOGIN_REDIRECT_URL = '/accounts/profile/<name>'
+LOGIN_REDIRECT_URL = '/profile/<name>'
 
-##LOGOUT_REDIRECT_URL = None
+LOGOUT_REDIRECT_URL = None
