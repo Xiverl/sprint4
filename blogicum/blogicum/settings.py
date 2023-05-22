@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'django_bootstrap5',
     'blog.apps.BlogConfig',
     'pages.apps.PagesConfig',
+    'users.apps.UsersConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -146,6 +147,6 @@ CSRF_FAILURE_VIEW = 'pages.views.csrf_failure'
 
 ###LOGIN_URL = '/accounts/login/'
 
-#LOGIN_REDIRECT_URL = '/profile/<name>'
+LOGIN_REDIRECT_URL = '/accounts/profile/<name>'
 
 ##LOGOUT_REDIRECT_URL = None

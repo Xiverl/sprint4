@@ -30,6 +30,7 @@ urlpatterns = [
         ),
         name='registration',
     ),
+    path('accounts/', include('users.urls', namespace='users')),
     path('pages/', include('pages.urls', namespace='pages')),
     path('admin/', admin.site.urls),
 ]
