@@ -34,7 +34,6 @@ INSTALLED_APPS = [
     'django_bootstrap5',
     'blog.apps.BlogConfig',
     'pages.apps.PagesConfig',
-    'users.apps.UsersConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -132,21 +131,6 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MAX_POST = 5
-
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 
 EMAIL_FILE_PATH = BASE_DIR / 'sent_emails'
-
-CSRF_FAILURE_VIEW = 'pages.views.csrf_failure'
-
-#login
-AUTH_USER_MODEL = 'auth.User'
-
-AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend']
-
-LOGIN_URL = '/accounts/login/'
-
-LOGIN_REDIRECT_URL = '/profile/<name>'
-
-LOGOUT_REDIRECT_URL = None
